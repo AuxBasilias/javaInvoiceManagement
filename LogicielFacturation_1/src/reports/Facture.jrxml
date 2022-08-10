@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="05fe6baf-750c-4f65-8c7b-6f65e5acd3af">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="165"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="4543ad65-48c2-4edc-b407-9df0eec8cbf8"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="146" y="1" width="260" height="31" uuid="709ed57e-be7e-42e3-85a4-871073c9d1a0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24"/>
+				</textElement>
+				<text><![CDATA[Ets La "Bonne Semence"]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="64" width="100" height="1" uuid="421bc75a-c39f-4506-bcec-5e58e7eb2967"/>
+			</break>
+			<line>
+				<reportElement x="85" y="33" width="487" height="1" uuid="8ae4a377-7aab-497e-94b0-3d451da014eb"/>
+			</line>
+			<line>
+				<reportElement x="85" y="63" width="487" height="1" uuid="b7bfa64b-e829-4bb2-b0bb-5d6253d16f7e"/>
+			</line>
+			<staticText>
+				<reportElement x="100" y="34" width="414" height="29" forecolor="#0099FF" uuid="227e8e20-f175-4255-9810-44685df71166"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[TOUS TRAVAUX D'IMPRESSION, FOURNITURE DE BUREAU ET DIVERS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="18" width="85" height="47" uuid="3ac87e61-594e-499f-b0e9-7e71b7e4962b"/>
+				<imageExpression><![CDATA["C:\\Users\\OthX\\OneDrive\\Images\\ebs_petit.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="372" y="12" width="46" height="20" uuid="4f2e1369-1c08-466a-9f98-643c4592c02d"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Lomé, le ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="12" width="72" height="20" uuid="22c5f904-cf10-49f1-9e19-ef8342924998"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="12" width="100" height="20" uuid="437cd765-31dc-41d9-bd83-535c541e6a72"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement x="261" y="16" width="50" height="20" uuid="e6d38557-3747-4d45-a22f-fa64a72e3c14"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Facture N°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="16" width="35" height="20" uuid="9de28647-9540-45de-b28c-7f8ea9679e75"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<text><![CDATA[num]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="16" width="72" height="20" uuid="986d7bcb-5691-4d94-9a05-f5009a3192bf"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[/EBS/DG/2022]]></text>
+			</staticText>
+			<line>
+				<reportElement x="261" y="35" width="157" height="1" uuid="3b539aff-6e66-416f-a2d7-5c5d5448cd2d"/>
+			</line>
+			<staticText>
+				<reportElement x="46" y="56" width="39" height="20" uuid="f8ee59e9-3cc3-43ab-84b2-99626c205bab"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Client:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="56" width="61" height="20" uuid="be8b57a5-09a7-4760-8402-90acdd5436c8"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="126" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table" style="table" x="20" y="1" width="508" height="125" uuid="ec934129-3ea8-41d0-ba6e-7ec99e844dd6"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="9fcd0f9d-4080-4ba0-b64d-21d4a5c837d8">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource(1)]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="89" uuid="b786802a-b31e-4be8-8ac9-df329dd62d11">
+						<jr:tableHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="89" height="30" uuid="93194f62-da60-4d18-b1fc-199d6661a648"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14"/>
+								</textElement>
+								<text><![CDATA[Quantité]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter height="30" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1"/>
+						<jr:columnFooter height="30" rowSpan="1"/>
+						<jr:detailCell height="30" rowSpan="1"/>
+					</jr:column>
+					<jr:column width="90" uuid="3a54ce2c-7911-4f7f-9739-d4478cfd0753">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="f7460139-e26e-47b6-b24d-41b322b01e65"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14"/>
+								</textElement>
+								<text><![CDATA[Désignation]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="table_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1"/>
+						<jr:columnFooter style="table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1"/>
+					</jr:column>
+					<jr:column width="90" uuid="f0183913-723c-4d1e-b18d-c95121be8902">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="1286358e-714d-49e5-b93b-de95ba2be0d3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14"/>
+								</textElement>
+								<text><![CDATA[Prix Unitaire]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="table_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1"/>
+						<jr:columnFooter style="table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1"/>
+					</jr:column>
+					<jr:column width="90" uuid="3ecc40d5-b3c4-453e-a259-0b873454eb48">
+						<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="a3f6e227-302c-4d52-b8de-cdd290faf7c8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="14"/>
+								</textElement>
+								<text><![CDATA[Prix Total]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="table_TH" height="30" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="30" rowSpan="1"/>
+						<jr:columnFooter style="table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1"/>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="50" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
